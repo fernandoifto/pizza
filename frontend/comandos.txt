@@ -1,0 +1,8 @@
+//Iniciar projeto Nextjs
+npx create-next-app@latest frontend
+
+//Instalar sass
+npm install sass
+
+//Instalar axios
+npm install axios

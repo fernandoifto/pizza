@@ -1,0 +1,67 @@
+// Inicializa o projeto com as configurações padrão
+npm init -y
+
+// Instala typescript
+npm install typescript --save-dev
+
+// Instala o express
+npm install express
+
+// Instalar types do express
+npm install @types/express -D
+
+// Inicializa o typescript
+npx tsc --init
+
+// Instalar ts-node-dev
+npm install ts-node-dev -D
+
+//instalar express-async-errors
+yarn add express-async-errors
+
+//instalar cors
+npm install cors
+
+//instalar @types/cors
+npm install @types/cors -D
+npm i --save-dev @types/cors
+
+//instalar postgresql
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo systemctl status postgresql
+sudo -i -u postgres
+psql
+ALTER USER postgres PASSWORD 'nova_senha';
+
+curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
+
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+
+//instalar pgadmin4
+sudo apt install pgadmin4
+sudo apt install pgadmin4-web
+
+//Instalar prisma
+npm install prisma --save-dev
+npm install @prisma/client
+
+
+//inicializar o prisma
+npx prisma init
+
+//criar as migrations
+npm run prisma:generate
+npm run prisma:migrate
+
+//Instalar biblioteca de criptografia
+npm install bcryptjs
+npm install @types/bcryptjs -D
+
+//Instalar JWT
+npm install jsonwebtoken
+npm install @types/jsonwebtoken -D
+
+//Biblioteca de envio de imagens
+npm install multer
+npm install @types/multer -D
