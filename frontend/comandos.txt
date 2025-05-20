@@ -6,3 +6,11 @@ npm install sass
 
 //Instalar axios
 npm install axios
+
+//Instalar cookies-next
+npm install cookies-next
+
+//Instalar Lucide React
+npm install lucide-react
+
+
