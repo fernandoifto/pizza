@@ -172,7 +172,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/fernando/Dropbox/proj/pj_pizza/backend/src/tools/generated/prisma",
+      "value": "/home/sti/Dropbox/proj/pj_pizza/backend/src/tools/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -186,7 +186,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/fernando/Dropbox/proj/pj_pizza/backend/prisma/schema.prisma",
+    "sourceFilePath": "/home/sti/Dropbox/proj/pj_pizza/backend/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -200,12 +200,11 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": null
+        "value": "postgresql://postgres:ifto%2325@localhost:5432/db_pizza?schema=public"
       }
     }
   },

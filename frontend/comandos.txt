@@ -13,4 +13,11 @@ npm install cookies-next
 //Instalar Lucide React
 npm install lucide-react
 
+//Instalar Sonner remover
+npm install sonner
 
+//Instalar react-toastify
+npm install react-toastify
+
+
+fernando.algaworks@gmail.com

@@ -5,13 +5,15 @@ import { LogOutIcon } from 'lucide-react';
 import styles from "./styles.module.scss";
 import { deleteCookie } from 'cookies-next';
 import { useRouter } from 'next/navigation';
+import { toast } from 'react-toastify'
 
 export default function Header() {
    const router = useRouter();
 
     async function handleLogout() {
         deleteCookie("session", { path: "/" });
-        router.replace("/");
+        toast.success("Logout realizado com sucesso!")
+        router.push("/");
     }
 
     return (
@@ -42,5 +44,3 @@ export default function Header() {
         </header>
     );
 }
-
-//fernando.algaworks@gmail.com

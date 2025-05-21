@@ -29,9 +29,6 @@ export default function Page() {
       if(!response.data.token){
         return
       }
-
-      console.log(response.data)
-      console.log(response.status) 
       
       const expressTime = 60 * 60 * 24 * 30 * 1000;
       const cookieStore = await cookies();
