@@ -1,21 +1,24 @@
+"use client";
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../page.module.scss'
 import logoImg from '../../../public/logo.png'
 //Importa a api criada no arquivo api.ts sem fontend/src/services/api.ts
 import { api } from '@/services/api'
-import { redirect } from 'next/navigation'
+//import { redirect } from 'next/navigation'
+import { toast } from 'react-toastify'
+import { useRouter } from 'next/navigation';
 
 export default function Signup(){
+  const router = useRouter();
 
   async function handleRegister(formData: FormData){
-    'use server'
     const name = formData.get('name')
     const email = formData.get('email')
     const password = formData.get('password')
 
     if(name === "" || email === "" || password === ""){
-      console.log("Preencha todos os campos")
+      toast.warning("Preencha todos os campos")
       return
     }
 
@@ -26,12 +29,12 @@ export default function Signup(){
         email,
         password
       })
+      toast.success("Usuário cadastrado com sucesso!")
+      router.push("/")
     } catch (error) {
-      console.log(error)
+      toast.warning("Erro ao cadastrar o usuário")
       return;
     }
-
-    redirect('/')
 
   }
   
